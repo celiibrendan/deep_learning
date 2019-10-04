@@ -3,16 +3,16 @@ LABEL maintainer="Brendan Celii"
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends apt-utils
 
-RUN pip3 install jupyterlab scipy pandas matplotlib==3.03
+RUN pip3 install jupyterlab scipy
 
 RUN pip3 install datajoint --upgrade
 
 RUN apt-get -y install vim
 
-
+s
 WORKDIR /src
 
-RUN pip3 install jupyterlab scipy pandas
+RUN pip3 install jupyterlab scipy
 
 RUN mkdir -p /scripts
 ADD ./jupyter/run_jupyter_unix.sh /scripts/
