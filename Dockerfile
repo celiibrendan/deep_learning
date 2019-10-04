@@ -9,7 +9,7 @@ RUN pip3 install datajoint --upgrade
 
 RUN apt-get -y install vim
 
-s
+
 WORKDIR /src
 
 RUN pip3 install jupyterlab scipy
