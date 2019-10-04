@@ -3,7 +3,7 @@ LABEL maintainer="Brendan Celii"
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends apt-utils
 
-RUN pip3 install jupyterlab scipy
+RUN pip3 install jupyterlab scipy sklearn
 
 RUN pip3 install datajoint --upgrade
 
